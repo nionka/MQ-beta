@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,5 +7,37 @@
 a {
     text-decoration: none;
 }
+
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans-Regular.woff") format("woff"),
+         url("../fonts/OpenSans-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans-Bold.woff") format("woff"),
+         url("../fonts/OpenSans-Bold.ttf") format("ttf");
+    font-weight: bold;       
+}
+
+body {
+    font-family: OpenSans;
+    width: 100%;
+}
+
+.header {
+    background-image: url(../images/rock-731140_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    height: 635px;
+
+}
+
+
+
 
 

@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <title>MQ-beta</title>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <div class="header-menu">
-                <img src="svg/noemi-logo.svg" class="header-logo" alt="logo">
+                <div class="logo">
+                    <svg class="logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	             viewBox="0 0 81.6 18.5" style="enable-background:new 0 0 81.6 18.5;" xml:space="preserve">
+                    <style type="text/css">
+	                .st0{fill:#B59F5B;}
+	                .st1{fill:#FFFFFF;}
+                    </style>
+                    <path class="st0" d="M12.9,3.6v14.9h-0.1l-10-9.1l0.1,8.5H0V3h0.1l10,9.2L10,3.6C10,3.6,12.9,3.6,12.9,3.6z"/>
+                    <path class="st1" d="M20.2,7.1c0.7-1.1,1.5-2,2.7-2.7c1.1-0.7,2.3-1,3.7-1s2.5,0.3,3.7,1c1.1,0.7,2,1.6,2.7,2.7s1,2.3,1,3.6
+	                s-0.3,2.5-1,3.7s-1.6,2-2.7,2.7s-2.3,1-3.7,1c-1.3,0-2.5-0.3-3.7-1c-1.1-0.7-2-1.5-2.7-2.7s-1-2.3-1-3.7C19.3,9.5,19.6,8.2,20.2,7.1
+	                z M22.8,13.1c0.4,0.7,0.9,1.3,1.6,1.7s1.4,0.6,2.3,0.6c0.8,0,1.5-0.2,2.2-0.6c0.7-0.4,1.2-1,1.6-1.7s0.6-1.5,0.6-2.3
+	                c0-0.9-0.2-1.6-0.6-2.3s-0.9-1.3-1.6-1.7s-1.4-0.6-2.2-0.6S25,6.3,24.4,6.8s-1.2,1-1.6,1.7s-0.6,1.5-0.6,2.3
+	                C22.2,11.6,22.4,12.4,22.8,13.1z"/>
+                    <path class="st1" d="M50,3.6v2.7h-7v3.1h6.2v2.7H43v3.1h7.2v2.7h-9.9V3.6H50z M45.9,2.6h-1.7L45.8,0h3L45.9,2.6z"/>
+                    <path class="st1" d="M71.5,3v14.9h-2.8v-6.8L64,17.7l0,0l-4.5-6.2v6.4h-2.7V3l0,0L64,13.3L71.5,3L71.5,3z"/>
+                    <path class="st1" d="M81.6,3.6v14.3h-2.8V3.6H81.6z"/>
+                    </svg>
+                </div>
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
@@ -32,8 +49,7 @@
                             <a href="#0" class="menu-list-link">контакты</a>
                         </li>
                     </ul>
-                </nav>
-                    
+                </nav>        
             </div>
             <div class="header-title">
                 <h1 class="title">блог о творчестве, спорте, и образе жизни</h1>
@@ -43,7 +59,8 @@
     <div class="content">
         <section class="trends">
             <h2 class="section-title">Сейчас в тренде</h2>
-            <article class="trend trend-garden">
+            <div class="trends-wrapper">
+              <article class="trend trend-garden">
                 <header class="trend-header">
                     <ul class="trend-header-list">
                         <li class="trend-header-item">
@@ -57,8 +74,8 @@
                         <a href="#0" class="trend-header-title-link">сейчас в тренде: сад на подоконнике</a>
                     </h3>
                 </header>
-            </article>
-            <article class="trend trend-cheese">
+              </article>
+              <article class="trend trend-cheese">
                 <header class="trend-header">
                     <ul class="trend-header-list">
                         <li class="trend-header-item">
@@ -69,8 +86,8 @@
                         <a href="#0" class="trend-header-title-link">сыры на красивых картинках из интернета: какие они на вкус?</a>
                     </h3>
                 </header>
-            </article>
-            <article class="trend trend-trek">
+              </article>
+              <article class="trend trend-trek">
                 <header class="trend-header">
                     <ul class="trend-header-list">
                         <li class="trend-header-item">
@@ -84,8 +101,8 @@
                         <a href="#0" class="trend-header-title-link">собираемся в первый поход в горы</a>
                     </h3>
                 </header>
-            </article>
-            <article class="trend trend-lemon">
+              </article>
+              <article class="trend trend-lemon">
                 <header class="trend-header">
                     <ul class="trend-header-list">
                         <li class="trend-header-item">
@@ -99,7 +116,8 @@
                         <a href="#0" class="trend-header-title-link">сейчас в тренде: сколько витамина с в лимонах</a>
                     </h3>
                 </header>
-            </article>
+              </article>
+            </div>
         </section>
         <div class="content-wrapper">
             <main class="postlist">
@@ -383,10 +401,64 @@
                   </section>
             </aside>
             <section class="shop">
-                
+                <h2 class="shop-title">наши изделия</h2>
+                <div class="shop-wrapper">
+                  <article class="product">
+                    <img src="images/shop-desktop1.jpg" class="product-img" alt="pillow">
+                    <div class="product-content">
+                        <h4 class="product-title">Подушки на диван</h4>
+                        <div class="product-description">
+                            <p>Набор из двух подушек с модными принтами. 
+                                Видео о создании <a href="#0" class="product-link">здесь</a>.
+                            </p>
+                        </div>
+                        <div class="product-prices">
+                            <div class="product-price">
+                                <div class="product-price-old">1000 ₽</div>
+                                <div class="product-price-new">800 ₽</div>
+                            </div>
+                            <button class="product-button" type="button">в магазин</button>
+                        </div>
+                    </div>
+                  </article>
+                  <article class="product">
+                    <img src="images/shop-desktop2.jpg" class="product-img" alt="toy">
+                    <div class="product-content">
+                        <h4 class="product-title">Кукла «Зайчик»</h4>
+                        <div class="product-description">
+                            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена 
+                                <a href="#0" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.
+                            </p>
+                        </div>
+                        <div class="product-prices">
+                            <div class="product-price">
+                                <div class="product-price-new">3500 ₽</div>
+                            </div>
+                            <button class="product-button" type="button">в магазин</button>
+                        </div>
+                    </div>
+                  </article>
+                  <article class="product">
+                    <img src="images/shop-desktop3.jpg" class="product-img" alt="frame">
+                    <div class="product-content">
+                        <h4 class="product-title">Шестиугольная рамка</h4>
+                        <div class="product-description">
+                            <p>Необычная рамка для украшения дома из видео 
+                                <a href="#0" class="product-link"> «Как сделать рамку из подручных средств за 30 минут»</a>. 
+                            </p>
+                        </div>
+                        <div class="product-prices">
+                            <div class="product-price">
+                                <div class="product-price-old">500 ₽</div>
+                                <div class="product-price-new">400 ₽</div>
+                            </div>
+                            <button class="product-button" type="button">в магазин</button>
+                        </div>
+                    </div>
+                  </article>
+                </div>
             </section>
         </div>
-
     </div>
     <footer class="footer">
         <div class="footer-container">
