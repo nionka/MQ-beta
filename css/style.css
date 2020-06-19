@@ -23,18 +23,36 @@ a {
 }
 
 body {
-    font-family: OpenSans;
+    font-family: OpenSans, sans-serif;
     width: 100%;
+    font-size: 5vmin;
 }
 
 .header {
-    background-image: url(../images/rock-731140_1920.jpg);
+    background-image: url(../images/banner1-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
+    position: relative;
+}
 
-    height: 635px;
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
+.header-container {
+    position: relative;
+    z-index: 1;
+    height: 100vmax;
+    padding: 0 6%;
 }
 
 
