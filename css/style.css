@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 @font-face {
     font-family: OpenSans;
     src: url("../fonts/OpenSans-Regular.woff") format("woff"),
@@ -25,7 +29,6 @@ a {
 body {
     font-family: OpenSans, sans-serif;
     width: 100%;
-    font-size: 5vmin;
 }
 
 .header {
@@ -37,7 +40,7 @@ body {
     position: relative;
 }
 
-.header::after {
+.header::after, .trend::after {
     content: "";
     position: absolute;
     background-color: #000000;
@@ -53,9 +56,347 @@ body {
     z-index: 1;
     height: 100vmax;
     padding: 0 6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.header-menu {
+    display: flex;
+    flex-direction: column;
+}
 
+.menu {
+    display: none;
+}
+
+.logo {
+    order: 2;
+    width: 270px;
+}
+
+.header-title {
+    padding: 40px 0;
+}
+
+.title {
+    font-size: 8vmin;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+}
+
+.trends, .sidebar, .search-section, .subscribe, .tags, .categories, .shop, .footer {
+    margin-top: 40px;
+}
+
+.trends-wrapper, .subscribe-form, .tags-list, .categories-list, .shop-wrapper {
+    margin-top: 30px;
+}
+
+.section-title, .newposts-title, .subscribe-title, .tags-title, .categories-title, .shop-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    text-align: center;
+}
+
+.trend {
+    height: 230px;
+    margin-top: 5px;
+    padding: 0 6% 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+    display: flex;
+    align-items: end;
+}
+
+.trend-header {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    border: 3px solid #b59f5b;
+}
+
+.trend-garden {
+    background-image: url("../images/garden-desktop.jpg");   
+}
+
+.trend-cheese {
+    background-image: url("../images/cheese-desktop.jpg");
+}
+
+.trend-trek {
+    background-image: url("../images/trek-desktop.jpg");
+}
+
+.trend-lemon {
+    background-image: url("../images/lemon-desktop.jpg");
+}
+
+.trend-header-list, .postlist-blok-category-list {
+    display: flex;
+}
+
+.trend-header-item, .postlist-blok-category-item {
+    margin-right: 10px;
+}
+
+.trend-header-link, .postlist-blok-category-link {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b59f5b;
+}
+
+.trend-header-title-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.content-wrapper, .footer-container {
+    margin-top: 40px;
+    padding: 0 6%;
+}
+
+.postlist-blok:nth-child(n + 2) {
+    margin-top: 35px;
+}
+
+.postlist-blok-img {
+    width: 100%;
+}
+
+.postlist-blok-title {
+    margin: 10px 0;
+}
+
+.postlist-blok-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    line-height: 20px;
+}
+
+.postlist-blok-data, .newpost-time {
+    font-size: 12px;
+    color: #888888;
+}
+
+.postlist-blok-autor {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.postlist-text {
+    padding: 20px 0;
+    border-bottom: 3px solid #eeeeee;
+    font-size: 14px;
+    color: #0f0d0e;
+}
+
+p:not(:first-child) {
+    margin-top: 10px;
+}
+
+.newpost {
+      display: flex;
+      margin-top: 25px;
+}
+
+.newpost-title-link {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+}
+
+.newpost-img {
+      display: block;
+      width: 65px;
+      height: 65px;
+      margin-right: 10px;
+}
+
+.search {
+    display: flex;
+    position: relative;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+  
+.search-label {
+    width: calc(100% - 48px);
+}
+  
+.search-input {
+    width: 100%;
+    height: 48px;
+    background-color: #f4f7f6;
+    padding: 8px 12px;
+    border: 0;
+}
+  
+.button-search {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    position: absolute;
+    right: 0;
+  
+    font-size: 13px;
+    color: #000000;
+  
+    background-image: url("../svg/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+    background-color: #b59f5b;
+}
+
+.subscribe-input {
+    width: 100%;
+    height: 48px;
+    background-color: #f4f7f6;
+    border: 0;
+    padding: 20px;
+  
+    font-size: 13px;
+    color: #000000;
+}
+  
+.subscribe-button {
+    width: 100%;
+    height: 48px;
+    background-color: #b59f5b;
+    text-transform: uppercase;
+    border: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+  
+    margin-top: 15px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.tags-item {
+    border: 3px solid #eeeeee;
+    padding: 0 5px;
+    margin: 4px;
+}
+  
+.tags-link {
+    font-size: 12px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.categories-list-link {
+    font-size: 14px;
+    line-height: 47px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+  
+.categories-list-item {
+    border-bottom: 1px solid #eeeeee;
+}
+  
+.categories-index {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #b59f5b;
+    font-weight: 700;
+}
+
+.product-img {
+    width: 100%;
+}
+ 
+.socials {
+    background-color: #f4f7f6;
+}
+.socials-list {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.socials-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    background-color: #f4f7f6;
+    padding: 25px;
+}
+  
+.socials-link-twitter {
+    background-image: url("../svg/004-twitter.svg");
+}
+  
+.socials-link-pinterest {
+    background-image: url("../svg/001-pinterest.svg");
+}
+  
+.socials-link-facebook {
+    background-image: url("../svg/002-facebook-logo.svg");
+}
+  
+.socials-link-instagram {
+    background-image: url("../svg/005-instagram.svg");
+}
+  
+.socials-link-tumblr {
+    background-image: url("../svg/003-tumblr.svg");
+}
+
+.copyrights {
+    margin: 40px 0;
+    padding: 10px;
+    text-align: center;
+}
+  
+.copyrights-link {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #999999;
+    font-weight: 700;
+}  
+ 
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
 
 
 
