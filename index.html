@@ -7,8 +7,7 @@
     <title>MQ-beta</title>
 </head>
 <body>
-  <div class="popup">
-    <button class="btn-close"></button>
+  <div id="popup">
     <div class="popup-wrapper">
       <h2 class="popup-title">ваш фидбек</h2>
       <form class="form">
@@ -25,11 +24,11 @@
         </div>
         <div class="form-group">
             <span class="group-text">Вы подписаны на e-mail рассылку?</span>
-            <label class="label-yes">
+            <label class="label-radio">
               <input type="radio" name="radio-group" class="radio">
               <span class="radio-group-text">Да</span>
             </label>
-            <label class="label-no">
+            <label class="label-radio">
               <input type="radio" name="radio-group" class="radio">
               <span class="radio-group-text">Нет</span>
             </label>
@@ -41,8 +40,9 @@
               <textarea class="group-textarea" placeholder="Может больше рецептов?" required></textarea>
           </label>
         </div>
-        <button class="enter-btn">отправить</button>
+        <button class="enter-btn" type="button">отправить</button>
       </form>
+      <button class="close" title="закрыть" onclick="document.getElementById('popup').style.display='none';"></button>
     </div>
   </div>
     <header class="header">
@@ -67,7 +67,7 @@
                     </svg>
                 </div>
                 <nav class="menu">
-                  <button class="menu-btn"></button>
+                  <button class="menu-btn" type="button"></button>
                     <ul class="menu-list">
                         <li class="menu-list-item">
                             <a href="#0" class="menu-list-link">главная</a>
@@ -534,6 +534,9 @@
                 <a href="#0" class="copyrights-link">Copyright © 2009–2019 City Blog LLC.</a>
             </div>
         </div>
-    </footer>  
+    </footer> 
+    <script type="text/javascript">
+    setTimeout("document.getElementByld('popup').style.display='block'");
+    </script> 
 </body>
 </html>
