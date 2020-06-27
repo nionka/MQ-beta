@@ -53,7 +53,7 @@ body {
     z-index: 1000;
     position: absolute;
     width: 88%;
-    height: 85vmax;
+    height: 400px;
     padding: 20px;
     background-color: #ffffff;
 }
@@ -216,7 +216,7 @@ body {
     position: absolute;
     align-self: flex-end;
     top: 25px;
-    margin-right: 20px;
+    right: 20px;
 }
 
 .menu-btn {
@@ -723,8 +723,9 @@ p:not(:first-child) {
     }
     
     .popup-wrapper {
-        width: 400px;
+        width: 385px;
         height: 530px;
+        padding: 20px 35px;
     }
 
     .form {
@@ -839,8 +840,9 @@ p:not(:first-child) {
     }
     
     .popup-wrapper {
-        width: 400px;
+        width: 385px;
         height: 530px;
+        padding: 20px 35px;
     }
 
     .form {
